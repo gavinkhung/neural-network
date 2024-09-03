@@ -16,7 +16,7 @@ Build the JupyterLab Docker image and start it
 
 ```bash
 docker build -t neural-network .
-docker run -p 8888:8888 -v "$(pwd)":/home/jovyan/work neural-network
+docker run --rm -p 8888:8888 -v "$(pwd)":/home/jovyan/work neural-network
 ```
 
 Open JupyterLab at the following URL: [http://127.0.0.1:8888/lab](http://127.0.0.1:8888/lab)
@@ -26,7 +26,7 @@ Open JupyterLab at the following URL: [http://127.0.0.1:8888/lab](http://127.0.0
 Start the Docker image
 
 ```bash
-docker compose up --build
+docker compose up --build -d
 ```
 
 Open JupyterLab at the following URL: [http://127.0.0.1:8888/lab](http://127.0.0.1:8888/lab)
@@ -34,7 +34,7 @@ Open JupyterLab at the following URL: [http://127.0.0.1:8888/lab](http://127.0.0
 Clean up the Docker container
 
 ```bash
-docker compose down
+docker compose down --volumes --rmi local
 ```
 
 ## Program Output
