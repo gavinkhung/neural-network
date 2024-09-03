@@ -26,7 +26,7 @@ Open JupyterLab at the following URL: [http://127.0.0.1:8888/lab](http://127.0.0
 Start the Docker image
 
 ```bash
-docker compose up
+docker compose up --build
 ```
 
 Open JupyterLab at the following URL: [http://127.0.0.1:8888/lab](http://127.0.0.1:8888/lab)
