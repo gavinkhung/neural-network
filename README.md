@@ -12,16 +12,30 @@ jupyter notebook
 
 ### Running via Docker
 
-Build the JupyterLab Docker container and start it
+Build the JupyterLab Docker image and start it
 
 ```bash
 docker build -t neural-network .
 docker run -p 8888:8888 -v "$(pwd)":/home/jovyan/work neural-network
 ```
 
-Open JupyterLab at the following URL:
+Open JupyterLab at the following URL: [http://127.0.0.1:8888/lab](http://127.0.0.1:8888/lab)
 
-- [http://127.0.0.1:8888/lab](http://127.0.0.1:8888/lab)
+### Running via Docker Compose
+
+Start the Docker image
+
+```bash
+docker compose up
+```
+
+Open JupyterLab at the following URL: [http://127.0.0.1:8888/lab](http://127.0.0.1:8888/lab)
+
+Clean up the Docker container
+
+```bash
+docker compose down
+```
 
 ## Program Output
 
