@@ -1,6 +1,6 @@
 # Neural Network
 
-Neural Network Implementation using Gradient Descent algorithm, Linear Algebra, NumPy, SymPy, and Matplotlib
+Neural Network Implementation using Gradient Descent algorithm, Linear Algebra, NumPy, and Matplotlib. The corresponding PyTorch code is also implemented.
 
 ## Usage
 
@@ -39,4 +39,8 @@ docker compose down --volumes --rmi local
 
 ## Program Output
 
-![Neural Network](./neural_network.gif "Neural Network Graphs")
+Numpy Implementation
+![Neural Network without ML Library](./neural_network.gif "Neural Network Graphs Numpy")
+
+Pytorch Implementation
+![Neural Network with PyTorch](./neural_network_pytorch.gif "Neural Network Graphs PyTorch")
