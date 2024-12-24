@@ -19,8 +19,8 @@ RUN pip install --no-cache-dir --index-url 'https://download.pytorch.org/whl/cpu
     fix-permissions "${CONDA_DIR}" && \
     fix-permissions "/home/${NB_USER}"
 
-COPY requirements.txt .
 # Install the Python dependencies
+COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
